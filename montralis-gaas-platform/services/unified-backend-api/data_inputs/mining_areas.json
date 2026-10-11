@@ -1,0 +1,57 @@
+{
+  "Argentina": [{"name": "Salar del Hombre Muerto", "lat": -25.4, "lng": -66.95, "minerals": ["LITHIUM"]}],
+  "Australia": [
+    {"name": "Greenbushes", "lat": -33.86, "lng": 116.06, "minerals": ["LITHIUM"]},
+    {"name": "Kambalda", "lat": -31.2, "lng": 121.67, "minerals": ["NICKEL"]}
+  ],
+  "Bolivia": [{"name": "Salar de Uyuni", "lat": -20.13, "lng": -67.49, "minerals": ["LITHIUM"]}],
+  "Brazil": [{"name": "Minas Gerais Lithium Valley", "lat": -16.85, "lng": -42.15, "minerals": ["LITHIUM"]}],
+  "Canada": [{"name": "Sudbury Basin", "lat": 46.5, "lng": -81.0, "minerals": ["NICKEL", "COPPER"]}],
+  "Chile": [
+    {"name": "Salar de Atacama", "lat": -23.5, "lng": -68.25, "minerals": ["LITHIUM"]},
+    {"name": "Chuquicamata", "lat": -22.29, "lng": -68.9, "minerals": ["COPPER"]}
+  ],
+  "China": [
+    {"name": "Yichun", "lat": 27.81, "lng": 114.38, "minerals": ["LITHIUM"]},
+    {"name": "Bayan Obo REE District", "lat": 41.77, "lng": 109.97, "minerals": ["NEODYMIUM", "PRASEODYMIUM", "LANTHANUM", "CERIUM", "SAMARIUM", "EUROPIUM"], "mapping_basis": "REE district association; approximate reference point"},
+    {"name": "Longnan Ion-Adsorption REE District", "lat": 24.87, "lng": 115.01, "minerals": ["DYSPROSIUM", "TERBIUM", "GADOLINIUM", "YTTRIUM", "HOLMIUM", "ERBIUM", "THULIUM", "YTTERBIUM", "LUTETIUM"], "mapping_basis": "HREE district association; approximate reference point"}
+  ],
+  "Cuba": [{"name": "Moa", "lat": 20.66, "lng": -74.94, "minerals": ["NICKEL", "COBALT"]}],
+  "DR Congo": [
+    {"name": "Katanga Copperbelt (Kolwezi)", "lat": -10.72, "lng": 25.47, "minerals": ["COPPER", "COBALT"]},
+    {"name": "Manono-Kitotolo", "lat": -7.3, "lng": 27.43, "minerals": ["LITHIUM"]}
+  ],
+  "Finland": [{"name": "Kaustinen", "lat": 63.55, "lng": 23.7, "minerals": ["LITHIUM"]}],
+  "Gabon": [{"name": "Moanda", "lat": -1.57, "lng": 13.2, "minerals": ["MANGANESE"]}],
+  "Ghana": [
+    {"name": "Nsuta", "lat": 5.28, "lng": -2.0, "minerals": ["MANGANESE"]},
+    {"name": "Tarkwa Gold District", "lat": 5.30, "lng": -2.00, "minerals": ["GOLD"], "mapping_basis": "district association; approximate reference point"}
+  ],
+  "Indonesia": [{"name": "Sorowako", "lat": -2.55, "lng": 121.37, "minerals": ["NICKEL"]}],
+  "Kazakhstan": [{"name": "Zhezkazgan", "lat": 47.8, "lng": 67.71, "minerals": ["COPPER"]}],
+  "Madagascar": [{"name": "Ambatovy", "lat": -18.85, "lng": 48.33, "minerals": ["NICKEL", "COBALT"]}],
+  "Mexico": [{"name": "Fresnillo Silver District", "lat": 23.17, "lng": -102.87, "minerals": ["SILVER"], "mapping_basis": "district association; approximate reference point"}],
+  "Mongolia": [{"name": "Oyu Tolgoi", "lat": 43.01, "lng": 106.86, "minerals": ["COPPER"]}],
+  "Mozambique": [{"name": "Balama", "lat": -13.35, "lng": 38.6, "minerals": ["GRAPHITE"]}],
+  "Namibia": [{"name": "Uis", "lat": -21.21, "lng": 14.87, "minerals": ["LITHIUM"]}],
+  "Papua New Guinea": [{"name": "Ok Tedi", "lat": -5.22, "lng": 141.11, "minerals": ["COPPER"]}],
+  "Peru": [{"name": "Las Bambas", "lat": -14.05, "lng": -72.3, "minerals": ["COPPER"]}],
+  "Philippines": [{"name": "Surigao", "lat": 9.78, "lng": 125.49, "minerals": ["NICKEL"]}],
+  "Portugal": [{"name": "Barroso", "lat": 41.75, "lng": -7.9, "minerals": ["LITHIUM"]}],
+  "Russia": [{"name": "Norilsk", "lat": 69.35, "lng": 88.2, "minerals": ["NICKEL", "COPPER"]}],
+  "South Africa": [
+    {"name": "Bushveld Complex", "lat": -25.0, "lng": 27.5, "minerals": ["NICKEL", "COPPER", "PLATINUM", "PALLADIUM", "RHODIUM", "IRIDIUM", "RUTHENIUM", "OSMIUM"], "mapping_basis": "PGM district association; approximate reference point"},
+    {"name": "Kalahari Manganese Field", "lat": -27.5, "lng": 22.95, "minerals": ["MANGANESE"]}
+  ],
+  "Tanzania": [{"name": "Mahenge", "lat": -8.95, "lng": 36.7, "minerals": ["GRAPHITE"]}],
+  "United Kingdom": [{"name": "Cornwall (Cornubian Batholith)", "lat": 50.375, "lng": -4.716, "minerals": ["LITHIUM"]}],
+  "United States": [{"name": "Thacker Pass", "lat": 41.71, "lng": -118.06, "minerals": ["LITHIUM"]}],
+  "Zambia": [
+    {"name": "Copperbelt", "lat": -12.8, "lng": 28.2, "minerals": ["COPPER", "COBALT"]},
+    {"name": "North-Western Province", "lat": -12.1, "lng": 26.4, "minerals": ["COPPER"]}
+  ],
+  "Zimbabwe": [
+    {"name": "Bikita", "lat": -20.08, "lng": 31.65, "minerals": ["LITHIUM"]},
+    {"name": "Great Dyke", "lat": -19.3, "lng": 30.1, "minerals": ["NICKEL"]}
+  ]
+}

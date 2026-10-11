@@ -1,0 +1,111 @@
+{
+  "dashboard_1_exploration": {
+    "target_commodities_directory": {
+      "transition_energy_core": ["LITHIUM", "COPPER", "COBALT", "GRAPHITE", "NICKEL", "MANGANESE"],
+      "precious_monetary_stabilisers": ["GOLD", "SILVER"],
+      "light_rare_earth_elements_lree": ["NEODYMIUM", "PRASEODYMIUM", "LANTHANUM", "CERIUM", "SAMARIUM"],
+      "heavy_rare_earth_elements_hree": ["DYSPROSIUM", "TERBIUM", "EUROPIUM", "GADOLINIUM", "YTTRIUM", "HOLMIUM", "ERBIUM", "THULIUM", "YTTERBIUM", "LUTETIUM"],
+      "platinum_group_metals_pgm": ["PLATINUM", "PALLADIUM", "RHODIUM", "IRIDIUM", "RUTHENIUM", "OSMIUM"]
+    },
+    "pipelines": {
+      "esa_sentinel2_stac": {
+        "name": "ESA Copernicus Data Space Ecosystem (Sentinel-2 STAC API)",
+        "endpoint": "https://copernicus.eu",
+        "collection_id": "SENTINEL-2",
+        "primary_assets": ["B02", "B03", "B04", "B08", "B11", "B12"],
+        "use_case": "Provides 13-band optical and Short-Wave Infrared (SWIR-1 / SWIR-2) grids to calculate surface proxies for Lithium, Copper, Cobalt, and Rare Earths."
+      },
+      "wgg_world_gravity": {
+        "name": "World Gravity Map (WGG) Anomaly Grids",
+        "wms_endpoint": "http://obs-mip.fr",
+        "layer_id": "wgg:isostatic_anomaly_grid",
+        "use_case": "Maps subsurface density variations and structural bedrock trends."
+      },
+      "usgs_mineral_program_wms": {
+        "name": "USGS Mineral Resources Program WMS Services",
+        "wms_endpoint": "https://usgs.gov",
+        "layer_id": "mrds:deposits",
+        "use_case": "Overlays historical mineral distribution points on top of active satellite layers."
+      },
+      "national_geological_surveys": {
+        "name": "National Geological Survey Registries",
+        "endpoints": {
+          "bgs_uk": "https://bgs.ac.uk",
+          "african_ministries": "https://gov.local"
+        },
+        "use_case": "Ingests historical paper drill logs, soil chemistry tables, and local geochemical maps."
+      },
+      "nasa_usgs_landsat": {
+        "name": "USGS / NASA Landsat 8 & 9 (AWS Open Data Registry)",
+        "stac_endpoint": "https://usgs.gov",
+        "collection_id": "LANDSAT_8_9_OLI_TIRS",
+        "primary_assets": ["SR_B2", "SR_B5", "SR_B6", "SR_B7", "ST_B10", "ST_B11"],
+        "use_case": "Thermal Infrared (TIR-1 / TIR-2) monitoring used to trace low thermal emissivity elements like Graphite and Iridium."
+      },
+      "nasa_emit_hyperspectral": {
+        "name": "NASA EMIT (Earth Surface Mineral Dust Source Investigation)",
+        "endpoint": "https://nasa.gov",
+        "collection_id": "EMITL2ARFL.v001",
+        "use_case": "285-channel narrow-band imaging used to resolve complex Heavy Rare Earth (HREE) absorption spikes."
+      },
+      "usgs_mrds_api": {
+        "name": "USGS Global Mineral Resource Assessment (MRDS API)",
+        "endpoint": "https://usgs.gov",
+        "use_case": "Automated data harvesting script powered natively via import_mrds.py."
+      },
+      "onegeology_wms": {
+        "name": "OneGeology Global Web Map Service (WMS)",
+        "endpoint": "http://onegeology.org",
+        "use_case": "Renders standardized baseline geology rock formations inside the browser canvas."
+      },
+      "sovereign_mining_cadastres": {
+        "name": "Sovereign National Mining Cadastres (Trimble LandFiles / Regional APIs)",
+        "endpoint": "https://flexicadastre.com",
+        "use_case": "Verifies active lease ownership boundaries to ensure full legal compliance."
+      }
+    }
+  },
+  "dashboard_2_tailings_dam": {
+    "esa_sentinel1_radar": {
+      "name": "ESA Sentinel-1 Radar Satellite Constellation (InSAR)",
+      "stac_endpoint": "https://copernicus.eu",
+      "collection_id": "SENTINEL-1",
+      "primary_assets": ["VV", "VH"],
+      "use_case": "Surveys ground phase deltas over tailings reservoir walls to log strict 3mm deformation alerts."
+    }
+  },
+  "dashboard_3_utility_grid": {
+    "openstreetmap_infrastructure": {
+      "name": "OpenStreetMap Infrastructure Layers & Open Infrastructure Map",
+      "overpass_api_endpoint": "https://overpass-api.de",
+      "filters": ["power=line", "man_made=pipeline"],
+      "use_case": "Ingests long-distance vector pathing configurations for utility pipeline grids."
+    },
+    "comet_deformation_portal": {
+      "name": "COMET (Centre for the Observation and Modelling of Earthquakes, Volcanoes and Tectonics)",
+      "endpoint": "https://nerc.ac.uk",
+      "use_case": "Provides historical ground velocity matrix values to forecast active landslide and soil erosion hazards under grid lines."
+    }
+  },
+  "financial_and_logistics_clearings": {
+    "london_metal_exchange": {
+      "name": "London Metal Exchange (LME) API Feed",
+      "endpoint": "https://lme.com",
+      "use_case": "Feeds live pricing benchmarks into your ledger to compute commodity trading margins [finance]."
+    },
+    "benchmark_minerals_intelligence": {
+      "name": "Fastmarkets / Benchmark Mineral Intelligence APIs",
+      "endpoint": "https://benchmarkminerals.com",
+      "use_case": "Provides daily spot pricing data for battery-grade Lithium Carbonate and Flake Graphite."
+    },
+    "sovereign_mobile_money": {
+      "name": "Sovereign Mobile Money Gateway APIs B2B",
+      "networks": {
+        "safaricom_mpesa": "https://safaricom.co.ke",
+        "airtel_money": "https://airtel.com",
+        "orange_money": "https://orange.com"
+      },
+      "use_case": "Triggers automated, instant cash payouts to field drone pilots and local mining cooperatives."
+    }
+  }
+}

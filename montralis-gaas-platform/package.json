@@ -1,0 +1,21 @@
+{
+  "name": "montralis-gaas-platform",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:client": "npm run dev --workspace=apps/client-portal",
+    "dev:admin": "npm run dev --workspace=apps/admin-console",
+    "dev:logistics": "npm run dev --workspace=apps/logistics-portal",
+    "build:logistics": "npm run build --workspace=apps/logistics-portal"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^4.2.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.186.1"
+  }
+}

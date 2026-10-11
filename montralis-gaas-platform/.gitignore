@@ -1,0 +1,15 @@
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+.env
+*.pem
+*.key
+*.db
+*.tif
+*.tiff
+*.geotiff
+*.npy
+dist/
+packages/database/montralis_vault.db
+.dev-credentials
